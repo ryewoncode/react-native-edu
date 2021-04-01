@@ -6,7 +6,8 @@ import {View, Text} from 'react-native'
 // import ImageComponent from './ImageComponent';
 // import SytleComponent from './StyleComponent';
 // import CssTest from './CssTest'
-import PositionComponent from './PositionComponent';
+// import PositionComponent from './PositionComponent';
+import TextInputComponent from './TextInputComponent';
 
 const App = () => {
     let count = 500;
@@ -21,7 +22,8 @@ const App = () => {
         // <ImageComponent />
         // <SytleComponent />
         // <CssTest />
-        <PositionComponent />
+        // <PositionComponent />
+        <TextInputComponent />
     )
 }
   
