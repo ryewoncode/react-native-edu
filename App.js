@@ -7,7 +7,8 @@ import {View, Text} from 'react-native'
 // import SytleComponent from './StyleComponent';
 // import CssTest from './CssTest'
 // import PositionComponent from './PositionComponent';
-import TextInputComponent from './TextInputComponent';
+// import TextInputComponent from './TextInputComponent';
+import FlatListComponent from './FlatListComponent';
 
 const App = () => {
     let count = 500;
@@ -23,7 +24,8 @@ const App = () => {
         // <SytleComponent />
         // <CssTest />
         // <PositionComponent />
-        <TextInputComponent />
+        // <TextInputComponent />
+        <FlatListComponent />
     )
 }
   
