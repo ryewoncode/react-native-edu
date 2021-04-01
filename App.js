@@ -4,7 +4,9 @@ import {View, Text} from 'react-native'
 // import MyComponent from './MyComponent';
 // import MyComponentSate from './MyComponentSate';
 // import ImageComponent from './ImageComponent';
-import SytleComponent from './StyleComponent';
+// import SytleComponent from './StyleComponent';
+// import CssTest from './CssTest'
+import PositionComponent from './PositionComponent';
 
 const App = () => {
     let count = 500;
@@ -17,7 +19,9 @@ const App = () => {
         // <MyComponent name="ryewon">my text</MyComponent>
         // <MyComponentSate></MyComponentSate>
         // <ImageComponent />
-        <SytleComponent />
+        // <SytleComponent />
+        // <CssTest />
+        <PositionComponent />
     )
 }
   
