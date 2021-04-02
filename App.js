@@ -8,7 +8,8 @@ import {View, Text} from 'react-native'
 // import CssTest from './CssTest'
 // import PositionComponent from './PositionComponent';
 // import TextInputComponent from './TextInputComponent';
-import FlatListComponent from './FlatListComponent';
+// import FlatListComponent from './FlatListComponent';
+import NavMain from './NavMain'
 
 const App = () => {
     let count = 500;
@@ -25,7 +26,8 @@ const App = () => {
         // <CssTest />
         // <PositionComponent />
         // <TextInputComponent />
-        <FlatListComponent />
+        // <FlatListComponent />
+        <NavMain />
     )
 }
   
