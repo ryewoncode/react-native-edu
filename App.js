@@ -9,7 +9,8 @@ import {View, Text} from 'react-native'
 // import PositionComponent from './PositionComponent';
 // import TextInputComponent from './TextInputComponent';
 // import FlatListComponent from './FlatListComponent';
-import NavMain from './NavMain'
+// import NavMain from './NavMain'
+import ReduxApp from './src/ReduxApp';
 
 const App = () => {
     let count = 500;
@@ -27,7 +28,8 @@ const App = () => {
         // <PositionComponent />
         // <TextInputComponent />
         // <FlatListComponent />
-        <NavMain />
+        // <NavMain />
+        <ReduxApp />
     )
 }
   
