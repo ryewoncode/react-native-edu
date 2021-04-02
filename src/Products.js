@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from "react-native";
 import { useDispatch, useSelector } from 'react-redux';
 
-import { addProduct } from './action';
+import { addProduct, deleteProduct } from './action';
 
 const Products = () => {
     const products = useSelector(state => state.productReducer.products);
@@ -14,13 +14,18 @@ const Products = () => {
         dispatch(addProduct({name, maker}));
     }
 
+    const deleteBtn = (product) => {
+        dispatch(deleteProduct(product));
+    }
+
     return (
-        <View>
+        <View style={styles.all}>
             <Text>Products</Text>
             <Text>{products.length}</Text>
             {products && products.map((product, index) => (
-                <View key={index}>
+                <View key={index} style={styles.product}>
                     <Text>{product.name}, {product.maker}</Text>
+                    <Button title="Delete" onPress={deleteBtn(product)} />
                 </View>
             ))}
             <View style={styles.addform}>
@@ -33,12 +38,21 @@ const Products = () => {
 }
 
 const styles = StyleSheet.create({
+    all: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
     addform: {
         flexDirection: 'row',
     },
     input: {
         height: 40,
         borderWidth: 1,
+    },
+    product: {
+        flexDirection: 'row',
+        alignItems: 'center'
     }
 })
 
